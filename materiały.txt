@@ -2,6 +2,7 @@ Polecenia SQL:
 1. Logowanie > mysql -uroot -p
 2. Wybór bazy > use nazwa;
 3. Tworzenie bazy > create database nazwa;
-4. Pokazanie baz danych > show databases;
+4. Tworzenie tabel > create table nazwa;
 5. Pokazanie tabel > show tables;
 6. Pokazanie zawartości tabel > describe nazwa; lub desc nazwa;
+7. Pokazanie baz danych > show databases;
