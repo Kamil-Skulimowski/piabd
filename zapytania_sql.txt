@@ -1,0 +1,8 @@
+SELECT - pozwala wybrać dane kolumny lub je wszystkie (*) > SELECT imie
+FROM - oznacza wybrać daną tabele > FROM pytania
+WHERE - oznacza gdzie i pozwala wybrać dany warunek > SELECT * FROM pytania WHERE id = 15
+Sortowanie rosnąco w SQL > SELECT * FROM pytania ORDER BY tresc ASC, ewentualnie mozna użyć DESC(malejąco)
+Klauzula BETWEEN > SELECT tresc FROM pytania WHERE id BETWEEN 10 AND 12
+Klauzula LIKE > SELECT * FROM pytania WHERE tresc LIKE "Jaki%"
+Spójniki AND i OR > SELECT * FROM pytania WHERE id = 15 AND kategoria="programowanie" | SELECT * FROM pytania WHERE id = 15 OR kategoria="programowanie"
+Wybranie między dwoma róznymi wartościami w tej samej kolumnie i posiadanie tej samej wartości w innej dla rekordu > SELECT * FROM pytania WHERE (kategoria="programowanie" OR kategoria="systemy operacyjne i sieci") AND rok=2012
