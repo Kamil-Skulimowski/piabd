@@ -1,7 +1,11 @@
-Limit rekordów > SELECT * FROM 4bgr1.auto LIMIT 200;
+SELECT * FROM 4bgr1.auto LIMIT 200;
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D" LIMIT 5;
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D";
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D" AND typ="kombi";
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D" AND typ="kombi" AND kolor="zielony";
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D" AND typ="kombi" AND kolor="zielony" AND rocznik < 2004;
 SELECT * FROM 4bgr1.auto WHERE paliwo = "D" OR paliwo = "G";
+SELECT * FROM 4bgr1.auto WHERE paliwo = "D" OR paliwo = "G" ORDER BY cena DESC;
+SELECT * FROM 4bgr1.auto ORDER BY cena DESC LIMIT 3;
+SELECT kolor, typ, uwagi FROM 4bgr1.auto ORDER BY cena DESC LIMIT 3;
+SELECT kolor, typ, uwagi FROM 4bgr1.auto WHERE kolor ="żółty" ORDER BY cena DESC LIMIT 3;
