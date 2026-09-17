@@ -1,0 +1,43 @@
+Temat: Zapytania - strukturalny język zapytań.
+SQL zapewnia obsługe:
+- zapytan - wyszukiwanie danych w bazie
+- operowania danymi - wstawianie, modyfikowanie i usuwanie
+- definiowania danych - dodawanie do bazy danych nowych tabel
+- sterowania danymi - ochrona przed niepowolanym dostepem.
+
+DELETE usuwa dane lub rekordy, a DROP usuwa bazy i tabele.
+
+Operatory:
+rowny =
+nierowny <>
+mniejszy <
+wiekszy >
+mniejszy lub rowny <=
+wiekszy lub rowny >=
+
+Wampserver - do baz danych zamiast XAMPPA.
+
+Przyklady:
+SELECT * FROM `auto` WHERE cena > 5000;
+SELECT * FROM `auto` WHERE cena > 40000 AND cena < 50000;
+SELECT * FROM `auto` WHERE cena >= 40000 AND cena <= 50000;
+SELECT * FROM `auto` WHERE;
+/*komenatarz*/
+
+SELECT * FROM `auto` WHERE cena <> 34200;
+/*nierówny*/
+
+SELECT * FROM `auto` WHERE cena <> 34200 AND cena <> 10000;
+SELECT * FROM `auto` WHERE cena <> 34200 AND cena <> 10000 LIMIT 3;
+SELECT * FROM `auto` WHERE cena <> 34200 AND cena <> 10000 ORDER BY cena DESC LIMIT 3;
+SELECT * FROM `auto` WHERE cena <> 34200 AND cena <> 10000 ORDER BY cena DESC LIMIT 3
+
+/*nierówny za wyjątkiem dwóch 3 rekordy posortowane malejąco - DESC*/;
+
+SELECT * FROM 'auto' WHERE cena BETWEEN 10000 AND 35000 ORDER BY cena DESC LIMIT 3
+/*Between klauzula*/;
+
+Różnica miedzy BETWEEN a operatorami < i > jest to ze BETWEEN obejmuje zakres jeszcze z zawartymi wartosciami
+SELECT * FROM `auto` WHERE kolor BETWEEN 'A' AND 'N';
+SELECT * FROM `auto` WHERE kolor BETWEEN 'A' AND 'C'; /*kolory od A do C*/
+SELECT * FROM `auto` WHERE kolor BETWEEN 'A' AND 'C' ORDER BY typ;
