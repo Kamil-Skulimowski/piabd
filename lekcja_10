@@ -1,0 +1,14 @@
+insert into auto (kolor, typ) values ("czerwony", "kombi");
+update auto set kolor="niebieski" WHERE auto_id=42;
+update auto set cena=10000 WHERE auto_id=41;
+UPDATE auto set cena = cena * 1.5 WHERE auto_id = 41;
+INSERT INTO auto (przebieg, rocznik, paliwo) VALUES (100000, 2010, "D");
+UPDATE auto set przebieg = 150000 WHERE auto_id=42;
+UPDATE auto set przebieg=przebieg * 1.8 WHERE auto_id=43;
+INSERT INTO auto (rocznik, pojemnosc, cena, uwagi, paliwo, typ, przebieg, kolor, marka) VALUES (2015, 3.0, 80000, "", "D", "sedan", 50000, "czarny", "Mercedes");
+UPDATE auto set przebieg=przebieg * 1.5 WHERE auto_id=44;
+UPDATE auto set kolor="zielony" WHERE auto_id=44;
+DELETE FROM auto WHERE auto_id = 43;
+UPDATE auto set pojemnosc=1.5 WHERE auto_id = 3;
+
+limit 5,17; - co robi
