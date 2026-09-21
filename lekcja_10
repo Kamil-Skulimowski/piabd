@@ -12,3 +12,6 @@ DELETE FROM auto WHERE auto_id = 43;
 UPDATE auto set pojemnosc=1.5 WHERE auto_id = 3;
 
 limit 5,17; - co robi
+
+Przykład:
+SELECT * FROM `auto` WHERE cena <> 34200 AND cena <> 10000 ORDER BY cena DESC LIMIT 5,17; Odrzuca pierwsze pięć pasujących rekordów i wypisuje następne 17 pasujących.
