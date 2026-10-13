@@ -1,0 +1,19 @@
+Poradnik (tutorial) Git
+.pdf (spis tresci), (numery stron), (naglowki), (zrzuty ekranu - podpisane i ponumerowane)
+Jak pracowac z gitem.
+- wlasne zrzuty ekranów
+- tytul
+polecenia, co potrafi git
+w wordzie zrobic
+odpowiednia czcionka, marginesy
+
+
+
+Lekcja
+Temat: SELECT, UPDATE - ćwiczenia.
+
+Polecenia konsolowe, konfigruacaj xammpa, ostatnie polecenia, uprawnienia, dodawanie hasla, usuwanie bazy, uruchomienie uslug, nazwy plikow konfiguracyjnch, nazwy uslug
+- kartkowka 20.10
+
+do dwoch rekordow zdjecia
+w bazie ma byc zdjecie, zrobic eksport do sql i porownac je, zrobic backup przez mysql dump
